@@ -1,0 +1,4 @@
+.idea
+.vs
+cogs/__pycache__
+config.json
