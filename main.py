@@ -1,8 +1,8 @@
+from discord.ext import commands
+
 from json import load
 from pathlib import Path
 from pkgutil import iter_modules
-
-from discord.ext import commands
 
 # Load config json file
 
