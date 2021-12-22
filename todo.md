@@ -8,4 +8,4 @@ Discord bot for fetching simple information from Github's REST API
    
 
 ### Completed
-- [ ] Command handling
+- [X] Command handling
