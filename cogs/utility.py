@@ -21,6 +21,24 @@ class Utility(commands.Cog):
         await ctx.send('https://nohello.net/')
 
     @commands.command()
+    async def wikipedia(self, ctx):
+        await ctx.send('https://en.wikipedia.org/wiki/Main_Page')
+
+    @command.command()
+    async def caterror(self, ctx, argument = None):
+        if not argument:
+            await ctx.send("Please provide arguments e.g g!caterror <number>")
+        else:
+            cat_embed = discord.Embed(
+                title='cat 404',
+                url='http.cat/'+argument,
+                type='image',
+                description=''
+                )
+
+            await ctx.send(embed=cat_embed)
+
+    @commands.command()
     async def xkcd(self, ctx, arguments = None):
         if not arguments:
             await ctx.send('Please provide arguments e.g g!xkcd <comic_number>')
