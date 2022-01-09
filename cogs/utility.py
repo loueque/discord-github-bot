@@ -12,7 +12,10 @@ class Utility(commands.Cog):
     @commands.command()
     async def conventional(self, ctx):
         await ctx.send('https://www.conventionalcommits.org/en/v1.0.0/')
-
+    
+    @commands.command()
+    async def nohello(self, ctx):
+        await ctx.send('https://nohello.net/')
 
 def setup(bot):
     bot.add_cog(Utility(bot))
